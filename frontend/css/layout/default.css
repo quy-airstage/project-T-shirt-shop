@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    padding: 0px 50px;
+}
+
+.d_flex {
+    display: flex;
+}
+.flex_column {
+    flex-direction: column;
+}
+.justify_between{
+    justify-content: space-between;
+}
+
+.col_1 {
+    width: 8.33%;
+}
+
+.col_2 {
+    width: 16.66%;
+}
+
+.col_3 {
+    width: 25%;
+}
+
+.col_4 {
+    width: 33.33%;
+}
+
+.col_5 {
+    width: 41.66%;
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_7 {
+    width: 58.33%;
+}
+
+.col_8 {
+    width: 66.66%;
+}
+
+.col_9 {
+    width: 75%;
+}
+
+.col_10 {
+    width: 83.33%;
+}
+
+.col_11 {
+    width: 91.66%;
+}
+
+.col_12 {
+    width: 100%;
+}
+.m_5{
+    margin-top: 5px;
+}
+.__pop_up {
+    position: absolute;
+    top: 0px;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0);
+}
+
+.__back_ground_popup {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0px;
+    padding: 50%;
+    z-index: 1;
+}
+
+.__content_pop_up {
+    position: sticky;
+    top: 30%;
+    z-index: 2;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 24px;
+    margin: 20vw 40vw;
+}
+
+.__confirm {
+    padding: 5px 30px;
+    max-width: max-content;
+    background-color: white;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.__confirm:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.__btn_canner {
+    padding: 5px 30px;
+    max-width: max-content;
+    background-color: white;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.__btn_canner:hover {
+    background-color: #000000;
+    color: white;
+}
