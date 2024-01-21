@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: black;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.show_side {
+    flex-grow: 1;
+    background-color: #414141;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.logo_admin {
+    margin: 30px;
+
+}
+
+.logo_admin img {
+    height: 100px;
+}
+
+.nav_control {
+    width: 80%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px 5px;
+    border-top: 1px solid lightgray;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav_control .nav:last-child{
+    flex-grow: 1;
+    display: flex;
+    align-items: end;
+    border-top:0px;
+}
+.nav_control .nav:last-child a{
+    border-top:0px;
+}
+.nav a:hover {
+    color: lightgray;
+}
+
+.nav img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.box_show_side {
+    margin: 20px;
+    color: white;
+}
+
+.sile_statistical_main {
+    margin: 30px 0px;
+    display: flex;
+}
+
+.box_statistical {
+    text-align: center;
+    background-color: #171719;
+    padding: 20px 0px;
+    border-radius: 24px;
+    margin-right: 20px;
+}
+
+.box_statistical p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.box_table_statistical {
+    padding: 20px 25px;
+    margin-right: 20px;
+    margin: 20px 0px;
+    background-color: #171719;
+    border-radius: 24px;
+}
+
+.table_statistical {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table_statistical tr {
+    border-top: 1px solid white;
+}
+.table_statistical thead tr {
+    border-bottom: 1px solid white;
+}
+
+.table_statistical tr td {
+    padding: 10px 0px;
+
+}
+
+.table_statistical thead td {
+    font-weight: bolder;
+}
+
+.table_statistical tbody {
+    max-height: 400px;
+    width: 100%;
+    display: block;
+    overflow-y: scroll;
+}
+
+
+
+.table_statistical thead,
+.table_statistical tbody tr {
+    display: table;
+    width: 100%;
+}
