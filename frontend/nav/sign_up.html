@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolMate</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo-coolmate-new.svg">
+    <link rel="stylesheet" href="../css/layout/default.css">
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/footer.css">
+    <link rel="stylesheet" href="../css/nav/sign_in.css">
+    <script src="../js/sign_up.js"></script>
+
+</head>
+
+<body>
+    <div class="login">
+        <div class="side_login">
+            <div class="img_intro col_5">
+                <img src="../images/random-banner-ao_nam-2.jpg" alt="">
+            </div>
+            <div class="info_sign_in col_7">
+                <div class="img_logo">
+                    <a href="../index.html"><img src="../images/logo-coolmate-new.svg" alt=""></a>
+                </div>
+                <h2>Đăng ký</h2>
+
+                <input type="email" id="email" placeholder="Email" required>
+                <div class="input_password">
+                    <img class="hide_password" onclick="ControlPassword('show',0)" src="../images/hide.png" alt="">
+                    <img class="show_password" onclick="ControlPassword('hide',0)" src="../images/show.png" alt="">
+                    <input class="password_ipt" type="password" placeholder="Mật khẩu" required>
+                </div>
+                <div class="input_password">
+                    <img class="hide_password" onclick="ControlPassword('show',1)" src="../images/hide.png" alt="">
+                    <img class="show_password" onclick="ControlPassword('hide',1)" src="../images/show.png" alt="">
+                    <input class="password_ipt" type="password" placeholder="Nhập lại mật khẩu" required>
+                </div>
+                <p id="err" style="color: red; margin-bottom: 0px;"></p>
+                <button onclick="SignUpUser()">Đăng ký</button>
+                <p><a href="./sign_in.html"><span>Đã có tài khoản</span></a> <span>Quên mật khẩu</span></p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="__pop_up" id="__pop_up">
+        <div class="__back_ground_popup"></div>
+        <div class="__content_pop_up" id="content_popup">
+            
+        </div>
+    </div>
+    <script>
+        const popUp = document.querySelector(".__back_ground_popup")
+        const contentPopup = document.querySelector(".__content_pop_up")
+        popUp.addEventListener("click", function (event) {
+            document.querySelector(".__pop_up").style.transform = "scale(0)"
+        })
+
+        ControlPassword = (control, i) => {
+            const hidePass = document.getElementsByClassName("hide_password")
+            const showPass = document.getElementsByClassName("show_password")
+            const passwordInput = document.getElementsByClassName("password_ipt")
+            if (control === "show") {
+                showPass[i].style.visibility = "visible"
+                hidePass[i].style.visibility = "hidden"
+                passwordInput[i].type = "text"
+            }
+            if (control === "hide") {
+                showPass[i].style.visibility = "hidden"
+                hidePass[i].style.visibility = "visible"
+                passwordInput[i].type = "password"
+            }
+        }
+        ShowPopUp = (i, task) => {
+            document.querySelector(".__pop_up").style.transform = "scale(1)"
+        }
+    </script>
+
+</body>
+
+
+</html>
