@@ -1,0 +1,62 @@
+.footer {
+    height: max-content;
+    background-color: black;
+}
+
+.top_footer {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.intro_footer {
+    color: white
+}
+.intro_footer h3 {
+    font-size: 24px;
+}
+.intro_footer p {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.contact_footer {
+    color: white;
+}
+
+.btn_footer {
+    margin-top: 10px;
+    background-color: #2f5acf;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top_footer>div {
+    padding: 30px 40px;
+}
+.contact_footer p {
+    padding: 5px 0px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.contact_footer p:nth-child(1) {
+   margin-top: 0px;
+   padding: 0px;
+}
+.contact_footer b {
+    font-size: 18px;
+    margin: 10px 0px;
+}
+.location_footer {
+    color: white;
+}
+.location_footer>h3 {
+    margin-bottom: 10px;
+}
+.location_footer>p {
+    margin: 10px 0px;
+}
