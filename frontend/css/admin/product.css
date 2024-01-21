@@ -1,0 +1,179 @@
+.detail_info_product {
+    margin-top: 20px;
+}
+
+.detail_info_product h2 {
+    font-size: 32px;
+}
+
+.detail_info_product p {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.info_size_product ul li {
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.box_img_product {
+    margin-right: 30px;
+    background-color: #171719;
+    padding: 5px 10px 10px 10px;
+    border-radius: 24px;
+    height: max-content;
+    min-height: 480px;
+    width: 50%;
+}
+
+.box_img_product>p {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.box_img_product>img {
+    width: 100%;
+    border-radius: 16px;
+
+}
+
+.list_img_product {
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: white;
+    height: max-content;
+    border-radius: 24px;
+    width: 15%;
+    /* object-fit: cover; */
+}
+
+.side_list_img_product {
+    flex-wrap: wrap;
+}
+
+.list_img_product>img {
+    width: 100%;
+    border-radius: 16px;
+
+}
+
+.box_detail_info h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.box_list_img h3 {
+    margin-top: 15px;
+}
+
+
+.form {
+    background-color: #171719;
+    height: max-content;
+    border-radius: 24px;
+    padding-bottom: 20px;
+}
+
+.form h1 {
+    margin: 20px;
+}
+
+.ipt {
+    border: 0px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.box_ipt {
+    margin: 10px 10px;
+}
+
+.box_ipt label {
+    font-weight: 600;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.ipt:focus-visible {
+    outline: none;
+}
+
+.ipt_file {
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 5px 10px;
+    color: #171719;
+}
+
+.ipt_file::file-selector-button {
+    margin-right: 20px;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.ipt_file::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.seletect_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.box_size {
+    width: 10%;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.box_size button {
+    border: 1px solid #171719;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.active_box_size {
+    color: white !important;
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
+.box_size label {
+    font-weight: 600;
+    margin-left: 10px;
+}
+.size_input_product {
+    visibility: hidden;
+    height: 0px;
+    transition: all 0.4;
+}
+.btn_size {
+    cursor: pointer;
+}
+.active_size_input_product {
+    visibility: visible;
+    height: max-content;
+    transition: all 0.4;
+}
