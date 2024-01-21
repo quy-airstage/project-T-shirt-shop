@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/layout/default.css">
+    <link rel="stylesheet" href="../css/admin/index.css">
+    <script src="../js/admin/index.js"></script>
+</head>
+
+<body onload="Render()">
+    <div class="main">
+
+        <div class="nav_bar">
+            <div class="logo_admin">
+                <img src="../images/logo-coolmate-new.svg" alt="">
+            </div>
+            <div class="nav_control">
+                <div class="nav">
+                    <a href="./index.html">
+                        <img src="../images/admin/home.png" alt="">
+                        Trang chủ
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="./nav/category.html">
+                        <img src="../images/admin/categories.png" alt="">
+                        Danh mục
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="./nav/product.html">
+                        <img src="../images/admin/polo-shirt.png" alt="">
+                        Sản phẩm
+                    </a>
+                </div>
+                
+                <div class="nav">
+                    <a href="../index.html">
+                        <img src="../images/admin/arrow.png" alt="">
+                        Quay lại trang chủ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="show_side">
+            <div class="box_show_side">
+                <h1>Trang chủ</h1>
+                <div class="sile_statistical_main col_12" id="sile_statistical_main">
+                    <div class="box_statistical col_4">
+                        <h2>Danh mục</h2>
+                        <p><b>2</b></p>
+                    </div>
+                    <div class="box_statistical col_4">
+                        <h2>Danh mục</h2>
+                        <p><b>2</b></p>
+                    </div>
+                    <div class="box_statistical col_4">
+                        <h2>Danh mục</h2>
+                        <p><b>2</b></p>
+                    </div>
+                </div>
+                <div class="box_table_statistical">
+                    <h2>Sản phẩm mới</h2>
+                    <table class="table_statistical">
+                        <thead>
+                            <tr>
+                                <td class="col_3">Mã sản phẩm</td>
+                                <td class="col_3">Tên sản phẩm</td>
+                                <td class="col_2">Giá gốc</td>
+                                <td class="col_2">Giá đang bán</td>
+                                <td class="col_2">Ngày thêm</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_table_statistical_newproduct">
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="box_table_statistical">
+                    <h2>Sản phẩm bán chạy</h2>
+                    <table class="table_statistical">
+                        <thead>
+                            <tr>
+                                <td class="col_3">Mã sản phẩm</td>
+                                <td class="col_3">Tên sản phẩm</td>
+                                <td class="col_2">Giá gốc</td>
+                                <td class="col_2">Giá đang bán</td>
+                                <td class="col_2">Số lượng đã bán</td>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody_table_statistical_sellproduct">
+                           
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
