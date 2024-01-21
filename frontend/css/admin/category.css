@@ -1,0 +1,59 @@
+.btn_add button {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: #171719;
+}
+
+.btn_add button:hover {
+    background-color: #171719;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.form h2 {
+    font-size: 32px;
+}
+
+.form #name_category {
+    margin: 10px 0px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    width: 40%;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.form #name_category:focus-visible {
+    outline: none;
+    opacity: 1;
+}
+
+.btn {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 16px;
+    font-weight: 600;
+    background-color: white;
+    color: #171719;
+    width: max-content;
+
+}
+
+.btn:hover {
+    background-color: #171719;
+    color: white;
+}
+
+#tbody_table_statistical .btn {
+    padding: 3px 5px;
+    border-radius: 13px;
+    font-size: 16px;
+}
