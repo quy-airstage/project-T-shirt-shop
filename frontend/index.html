@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolMate</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-coolmate-new.svg">
+    <link rel="stylesheet" href="./css/layout/default.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/layout/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body onload="Render()">
+    <div class="main">
+        <div class="header">
+            <div class="container d_flex header_side">
+                <div class="img_logo d_flex col_2">
+                    <a href="./index.html"><img src="./images/logo-coolmate-new.svg" alt=""></a>
+                </div>
+                <div class="nav_bar_header d_flex col_4">
+                    <div class="nav_header">
+                        <a href="./nav/sale.html">Sale</a>
+                    </div>
+                    <div class="nav_header">
+                        <a href="./nav/shop.html">Cửa hàng</a>
+                    </div>
+
+                </div>
+                <form class="box_search d_flex col_4" method="get" action="./nav/shop.html">
+                    <input class="input_search" name="search" type="text"
+                        placeholder="Nhập tên sản phẩm, nhấn Enter để tìm kiếm">
+                    <img src="../images/home/header/search_icon.png" width="30px" alt="">
+                </form>
+                <div class="box_user_cart d_flex col_2">
+                    <div class="user_box">
+                        <a href="./nav/user.html"><img src="./images/home/header/user.png" width="40px" alt=""></a>
+                    </div>
+                    <div class="shopping_cart_box">
+                        <a href="./nav/cart.html"><img src="./images/home/header/shopping-bag.png" width="40px"
+                                alt=""></a>
+                        <b id="amount_product_cart" style="color: white;">0</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner col_12">
+            <div class="list_img_banner">
+                <img id="img_banner" src="./images/home/banner/banner_1.jpg" alt="">
+                <img src="./images/home/banner/banner_2.jpg" alt="">
+                <!-- <img src="./images/home/banner/banner_2.jpg" alt="">
+                <img src="./images/home/banner/banner_2.jpg" alt="">
+                <img src="./images/home/banner/banner_2.jpg" alt="">
+                <img src="./images/home/banner/banner_2.jpg" alt=""> -->
+
+            </div>
+            <div class="btn_control_banner">
+
+                <button onclick="ControlBanner('+')">> </button>
+                <button onclick="ControlBanner('-')">
+                    < </button>
+            </div>
+        </div>
+
+        <div class="list_product">
+            <div class="container">
+                <div class="control_list_product">
+                    <b>Sản phẩm mới</b>
+                </div>
+                <div id="box_new_products" class="box_products d_flex col_12">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="banner_body d_flex col_12">
+            <div class="img_banner_body">
+                <img src="./images/home/banner/banner_body_2.jpg" alt="">
+            </div>
+            <div class="content_banner_body col_5">
+                <h3>RUNNING COLLECTION</h3>
+                <p>Mang đến sự thoáng mát trên suốt đường chạy</p>
+                <p>Tặng găng tay chống UV đơn từ 299K</p>
+                <button>Khám phá ngay</button>
+            </div>
+
+        </div>
+        <div class="content col_12">
+            <div class="running_policy ">
+                <div class="container d_flex">
+                    <div class="running_card d_flex col_4">
+                        <div class="img_running_card">
+
+                            <img src="./images/home/banner/running.jpg" alt="">
+                        </div>
+                        <div class="content_running_card">
+                            <div class="content_running_card_preview">
+                                <p><b>Quick-Dry</b></p>
+                                <p>Nhanh khô</p>
+                            </div>
+                            <div class="content_running_card_view">
+                                <p>
+
+                                    Chất liệu vải được xử lí tính năng thấm hút và khô nhanh. Làm mát cơ thể bằng cách
+                                    thấm
+                                    hút
+                                    mồ hôi trên bề mặt vải, cùng với khả năng khô nhanh giúp bay hơi nhanh hơn. Giúp cơ
+                                    thể
+                                    khô
+                                    ráo, mang đến sự thoáng mát và tập trung trong khi vận động.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="running_card d_flex col_4">
+                        <div class="img_running_card">
+
+                            <img src="./images/home/banner/running2.jpg" alt="">
+                        </div>
+                        <div class="content_running_card">
+                            <div class="content_running_card_preview">
+                                <p><b>Chafe-Free</b></p>
+                                <p>Giảm tối đa ma sát</p>
+                            </div>
+                            <div class="content_running_card_view">
+                                <p>
+                                    Để bạn tập trung và vận động thoải mái hơn nữa, công nghệ Không đường may Ultrasonic
+                                    Bonded Seams sử dụng các tia laser để cắt vải và tối giản hoá các đường may. Từ đó
+                                    hạn chế tối đa sự ma sát của các đường may vào cơ thể khi vận động.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="running_card d_flex col_4">
+                        <div class="img_running_card">
+
+                            <img src="./images/home/banner/running3.jpg" alt="">
+                        </div>
+                        <div class="content_running_card">
+                            <div class="content_running_card_preview">
+                                <p><b>Ultralight</b></p>
+                                <p>Siêu nhẹ chỉ 85gsm</p>
+                            </div>
+                            <div class="content_running_card_view">
+                                <p>
+                                    Sử dụng các chất liệu nhẹ, cùng công nghệ Không đường may Seamless mang đến một
+                                    thiết kế tối giản để cực kỳ nhẹ. Để người mặc có cảm giác như bạn không mặc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="ready_to_wear">
+                    <h3>Ready to Wear by Coolmate</h3>
+                    <p>Các sản phẩm đã được giặt, sấy và ủi trước khi đóng gói, vì thế sản phẩm đã hoàn toàn sẵn sàng
+                        cho
+                        việc mặc, mà khách hàng không phải giặt khi mới mang về.</p>
+                    <img src="./images/home/mceclip0_49.jpg" alt="">
+                    <!-- <img style="width:65%;" src="./images/home/mceclip16.jpg" alt=""> -->
+                </div>
+            </div>
+            <img src="./images/home/mceclip2_47.jpg" alt="" width="100%">
+            <img src="./images/home/mceclip3_93.jpg" alt="" width="100%">
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="top_footer col_12">
+                    <div class="intro_footer col_5">
+                        <h3>
+                            COOLMATE lắng nghe bạn!
+                        </h3>
+                        <p>
+                            Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể
+                            nâng
+                            cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+                        </p>
+                        <button class="btn_info btn_footer">
+                            Đóng góp ý kiến
+                        </button>
+                    </div>
+                    <div class="contact_footer col_3">
+                        <p>Hotline</p>
+                        <b>1900.272737 - 028.7777.2737
+                            (8:30 - 22:00)</b>
+
+                        <p>Email</p>
+                        <b>Cool@coolmate.me</b>
+
+
+                    </div>
+                    <div class="location_footer col_4">
+                        <h3>ĐỊA CHỈ LIÊN HỆ</h3>
+                        <p>Văn phòng Hà Nội: Tầng 3-4, Tòa nhà BMM, KM2, Đường Phùng Hưng, Phường Phúc La, Quận Hà Đông,
+                            TP
+                            Hà Nội</p>
+                        <p>
+                            Văn phòng Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí
+                            Minh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    let check = sessionStorage.getItem('cartProduct');
+    check = JSON.parse(check)
+    let amountProduct = document.getElementById("amount_product_cart")
+    let count = 0
+    Object.keys(check).forEach(key => {
+        check[key].forEach((product, i) => {
+            count += product.quantity;
+        });
+    });
+    amountProduct.innerHTML = count
+    ControlBanner = (control) => {
+        var list = [0, 1]
+        let screenWidthClient = document.body.clientWidth
+        let imgBanner = document.getElementsByClassName("list_img_banner")[0]
+        switch (control) {
+            case '+':
+                imgBanner.style.right >= (`${(list.length - 1) * screenWidthClient}px`) ?
+                    imgBanner.style.right = `0px` :
+                    imgBanner.style.right = `${Number(imgBanner.style.right.replace("px", "")) + screenWidthClient}px`
+                break;
+            case '-':
+                imgBanner.style.right <= '0px' ?
+                    imgBanner.style.right = `${(list.length - 1) * screenWidthClient}px` :
+                    imgBanner.style.right = `${Number(imgBanner.style.right.replace("px", "")) - screenWidthClient}px`
+                break;
+            default:
+                break;
+        }
+
+    }
+
+</script>
+
+</html>
