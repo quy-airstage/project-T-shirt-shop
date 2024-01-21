@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/layout/default.css">
+    <link rel="stylesheet" href="../../css/admin/index.css">
+    <link rel="stylesheet" href="../../css/admin/category.css">
+    <link rel="stylesheet" href="../../css/admin/product.css">
+    <script src="../../js/admin/product.js"></script>
+</head>
+
+<body onload="Render()">
+    <div class="main">
+
+        <div class="nav_bar">
+            <div class="logo_admin">
+                <img src="../../images/logo-coolmate-new.svg" alt="">
+            </div>
+            <div class="nav_control">
+                <div class="nav">
+                    <a href="../index.html">
+                        <img src="../../images/admin/home.png" alt="">
+                        Trang chủ
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="./category.html">
+                        <img src="../../images/admin/categories.png" alt="">
+                        Danh mục
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="./product.html">
+                        <img src="../../images/admin/polo-shirt.png" alt="">
+                        Sản phẩm
+                    </a>
+                </div>
+                
+                <div class="nav">
+                    <a href="../../index.html">
+                        <img src="../../images/admin/arrow.png" alt="">
+                        Quay lại trang chủ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="show_side">
+            <div class="box_show_side" id="box_show_side">
+                
+                
+
+                
+
+                
+
+            </div>
+        </div>
+        <div class="__pop_up" id="__pop_up">
+            <div class="__back_ground_popup"></div>
+            <div class="__content_pop_up" id="content_popup">
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const popUp = document.querySelector(".__back_ground_popup")
+        const contentPopup = document.querySelector(".__content_pop_up")
+
+        popUp.addEventListener("click", function (event) {
+            document.querySelector(".__pop_up").style.transform = "scale(0)"
+        })
+
+        
+        ChooseSize = (index, size) => {
+            
+            const btnSize = document.querySelectorAll(".btn_size")
+            const sizeInputProduct = document.querySelectorAll(".size_input_product")
+            chosenSize.forEach((size, i) => {
+                listSize.indexOf(size)
+            });
+            if (btnSize[index].classList.contains("active_box_size")) {
+                chosenSize.splice(chosenSize.indexOf(size), 1)
+                btnSize[index].classList.remove("active_box_size")
+                sizeInputProduct[index].classList.remove("active_size_input_product")
+            } else {
+                chosenSize = [...chosenSize, size]
+                btnSize[index].classList.add("active_box_size")
+                sizeInputProduct[index].classList.add("active_size_input_product")
+            }
+            console.log(chosenSize);
+        }
+
+        ShowPopUp = (i, task) => {
+            document.querySelector(".__pop_up").style.transform = "scale(1)"
+        }
+    </script>
+</body>
+
+</html>
